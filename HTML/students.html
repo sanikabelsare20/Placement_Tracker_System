@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/students.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <h1>Placement Tracker</h1>
+        <input type="search"  placeholder="Search.....">
+        <nav id="navlinks">
+            <a href="../index.html">Home</a>
+            <a href="./colleges.html">Colleges</a>
+            <a href="./students.html" class="active">Students</a>
+            <a href="./companies.html">Companies</a>
+            <a href="./jobRoles.html">Job Roles</a>
+        </nav>
+    </header>
+    
+  
+    <button id="newStudent">Add New Student</button>
+    <button id="allStudents" >All Students</button>
+    <button id="placedStudents"> Placed</button>
+    <button id="notPlacedStudents">Not Placed</button>
+         
+    <section id="students-container"></section>
+
+    <script src="../JS/api.js"></script>
+    <script src="../JS/students.js"></script>
+</body>
+</html>

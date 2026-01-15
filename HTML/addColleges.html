@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/header.css">
+
+    <style>
+        input,select{
+            height: 30px;
+            width: 250px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<!-- header -->
+    <header id="header">
+        <h1>Placement Tracker</h1>
+        <input type="search"  placeholder="Search.....">
+        <nav id="navlinks">
+            <a href="./index.html">Home</a>
+            <a href="./colleges.html">Colleges</a>
+            <a href="./students.html">Students</a>
+            <a href="./companies.html">Companies</a>
+            <a href="./jobRoles.html">Job Roles</a>
+        </nav>
+    </header>
+
+    <form id="collegeForm">
+        <input type="text" placeholder="Enter College Id" id="college_id"/>
+        <input type="text" id="name" placeholder="Enter College Name">
+        <br><br>
+        <select  id="type">
+            <option >Private</option>
+            <option >Government</option>
+        </select>
+        <input type="text" id="affiliated_to" placeholder="Affiliated To">
+        <br><br>
+        <input type="number" placeholder="Enter Established year" id="established_year">
+        <input type="text" placeholder="Enter City" id="city">
+        <br><br>
+        <input type="text" placeholder="Enter State Name" id="state">
+        <input type="text" placeholder="Enter Country Name" id="country">
+        <br><br>
+        <input type="number" placeholder="Enter pincode" id="pincode">
+        <input type="text" placeholder="Enter departments Name" id="departments">
+        <br><br>
+        <input type="number" placeholder="Enter Total No. Of Students" id="total_students">
+        
+ 
+        <button>Submit</button>
+
+        <script src="../JS/addColleges.js"></script>
+    </form>
+</body>
+</html>

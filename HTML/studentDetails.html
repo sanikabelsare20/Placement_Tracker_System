@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background: #f4f6f8;
+            padding: 40px;
+        }
+        .card{
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+        }
+        img{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+        }
+        h3{
+            text-align: center;
+            color: #1d4f2f;
+        }
+        p{
+            font-size: 15px;
+            margin: 8px 0;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="card" id="details"></div>
+
+<script>
+    let student = JSON.parse(localStorage.getItem("selectedStudent"));
+
+    document.getElementById("details").innerHTML = `
+        <img src="${student.personal_info.profile_image}">
+        <h3>${student.personal_info.full_name}</h3>
+        <p><b>Email:</b> ${student.personal_info.email}</p>
+        <p><b>College ID:</b> ${student.academic_info.college_id}</p>
+        <p><b>Branch:</b> ${student.academic_info.branch}</p>
+        <p><b>Placement Status:</b> ${student.placement_status}</p>
+    `;
+</script>
+</body>
+</html>

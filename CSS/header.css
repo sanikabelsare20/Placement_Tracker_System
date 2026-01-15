@@ -1,0 +1,51 @@
+ #header{
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1d4f2f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+} 
+#header>input{
+    height: 40px;
+    width: 25%;
+    border-radius: 20px;
+    border: none;
+    padding-left: 18px;
+    font-size: 14px;
+}
+#header>h1{
+    color: rgb(240, 217, 7);
+}
+#navlinks{
+    height: 80px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#navlinks>a{
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: green;
+    background: 30px;
+    text-decoration: none;
+}
+#navlinks>a:hover{
+    background-color: rgb(153, 229, 125);
+}
+
+#navlinks a.active{
+    background-color: rgb(153, 229, 125);
+}
+
+
+
